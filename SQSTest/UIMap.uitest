@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="79a7f981-4ddf-48c2-8c2c-ef60951cf6c1" AssemblyVersion="12.0.31101.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.9600.17498" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="yes" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows 8.1 Enterprise" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 6.3.9600.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="False" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1033" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1044" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1600" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="900" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="96" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="96" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <StringAssertAction UIObjectName="UIMap.UIFiskKvasirInternetExWindow.UIFiskKvasirDocument.UINamemaster1slave11coFrame.UIHttpwwwgooglecomafsaDocument.UIE19Pane.UIFiskeoppskrifterSunnPane">
+      <ParameterName />
+      <PropertyName>FriendlyName</PropertyName>
+      <ExpectedValue>Fiskeoppskrifter - Sunne og gode oppskri</ExpectedValue>
+      <MessageOnValidationFailure>FirstElementContains</MessageOnValidationFailure>
+      <Comparison>CurrentCulture</Comparison>
+      <PropertyCondition>Contains</PropertyCondition>
+    </StringAssertAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="AssertionSoekResultatFisk">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
+    </TestStepMarkerAction>
+    <BrowserAction UIObjectName="UIMap.UIFiskKvasirInternetExWindow1">
+      <ParameterName />
+      <ActionType>Close</ActionType>
+    </BrowserAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="CloseIE">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <NavigateToUrlAction UIObjectName="UIMap.UIMSNNorgeOutlookcomHoWindow">
+      <ParameterName />
+      <Url>http://kvasir.no/</Url>
+      <NewInstance>false</NewInstance>
+    </NavigateToUrlAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="GoToKvasir">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <SetValueAction UIObjectName="UIMap.UIKvasirEnsmarteremåteWindow.UIKvasirEnsmarteremåteDocument.UISøketternoeEdit">
+      <ParameterName />
+      <Value Encoded="false">fisk</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SendKeysAction UIObjectName="UIMap.UIKvasirEnsmarteremåteWindow.UIKvasirEnsmarteremåteDocument.UISøketternoeEdit">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Enter}</Text>
+    </SendKeysAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="SoekForFisk">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <NavigateToUrlAction>
+      <ParameterName />
+      <Url>http://go.microsoft.com/fwlink/p/?LinkId=255141</Url>
+      <NewInstance>true</NewInstance>
+    </NavigateToUrlAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="StartIE">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="UIMap">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="UIFyrstekakeGooglesøkIWindow" FriendlyName="fyrstekake - Google-søk - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="66244">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>fyrstekake - Google-søk</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">fyrstekake - Google-søk</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIFyrstekakeGooglesøkDocument" FriendlyName="fyrstekake - Google-søk" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>fyrstekake - Google-søk</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id">gsr</PropertyCondition>
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">fyrstekake - Google-søk</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">https://www.google.no/?gfe_rd=cr&amp;ei=_HjYVOahBMiq8weZroG4Cg&amp;gws_rd=ssl#q=fyrstekake</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Custom" Id="UIRsoCustom" FriendlyName="rso" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>fyrstekake - Google-søk</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">OL</PropertyCondition>
+                      <PropertyCondition Name="Id">rso</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="rso" eid="_3jYVIT6MYKC7gbGxYDIDw"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIFyrstekakeerensaftigPane" FriendlyName="Fyrstekake er en saftig og god formkake " SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>fyrstekake - Google-søk</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">SPAN</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText">Fyrstekake er en saftig og god formkake </PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">st</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="st"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">54</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIMSNNorgeOutlookcomHoWindow" FriendlyName="MSN Norge - Outlook.com, Hotmail, Skype, Bing og s..." SpecialControlType="BrowserWindow" SessionId="1509654">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>MSN Norge - Outlook.com, Hotmail, Skype, Bing og siste nyheter</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">MSN Norge - Outlook.com, Hotmail, Skype, Bing og siste nyheter</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants />
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIKvasirEnsmarteremåteWindow" FriendlyName="Kvasir - En smartere måte å lete på - Internet Exp..." SpecialControlType="BrowserWindow" SessionId="1509654">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Kvasir - En smartere måte å lete på</WindowTitle>
+            <WindowTitle>fisk - Kvasir</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Kvasir - En smartere måte å lete på</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIKvasirEnsmarteremåteDocument" FriendlyName="Kvasir - En smartere måte å lete på" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Kvasir - En smartere måte å lete på</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Kvasir - En smartere måte å lete på</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://kvasir.no/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UISøketternoeEdit" FriendlyName="Søk etter noe..." SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Kvasir - En smartere måte å lete på</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">q</PropertyCondition>
+                      <PropertyCondition Name="Name">q</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title">Søk etter noe...</PropertyCondition>
+                      <PropertyCondition Name="Class">search-input tabnavigate</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="q" title="Søk etter noe..." class=</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIFiskKvasirInternetExWindow" FriendlyName="fisk - Kvasir - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="1509654">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>fisk - Kvasir</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">fisk - Kvasir</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIFiskKvasirDocument" FriendlyName="fisk - Kvasir" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>fisk - Kvasir</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">fisk - Kvasir</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/alle</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://kvasir.no/alle?q=fisk</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Frame" Id="UINamemaster1slave11coFrame" FriendlyName="{&quot;name&quot;:&quot;master-1&quot;,&quot;slave-1-1&quot;:{&quot;container&quot;:&quot;adcon..." SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>fisk - Kvasir</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Frame</PropertyCondition>
+                      <PropertyCondition Name="TagName">IFRAME</PropertyCondition>
+                      <PropertyCondition Name="Id">master-1</PropertyCondition>
+                      <PropertyCondition Name="Name">{"name":"master-1","slave-1-1":{"container":"adcontainer2","linkTarget":"_blank","lines":3,"colorTitleLink":"#18428F","colorDomainLink":"#388222","colorBorder":"#E8E7D8","fontSizeTitle":"16px","fontSizeDescription":"13px","fontSizeDomainLink":"13px","noTitleUnderline":true,"borderSelections":"top","adIconLocation":"ad-left","domainLinkAboveDescription":"true","plaFormat":"twoColumn","detailedAttribution":true,"type":"ads","columns":1,"horizontalAlignment":"left","resultsPageQueryParam":"query"},"master-1":{"container":"adcontainer1","linkTarget":"_blank","lines":3,"colorTitleLink":"#18428F","colorDomainLink":"#388222","colorBorder":"#E8E7D8","fontSizeTitle":"16px","fontSizeDescription":"13px","fontSizeDomainLink":"13px","noTitleUnderline":true,"borderSelections":"bottom","adIconLocation":"ad-left","domainLinkAboveDescription":"true","plaFormat":"twoColumn","detailedAttribution":true,"type":"ads","columns":1,"horizontalAlignment":"left","resultsPageQueryParam":"query"}}</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/afs/ads%3Fq=fisk&amp;lo=true&amp;adpage=1&amp;adrep=2&amp;po=true&amp;r=m&amp;fexp=2631602%252C21404%252C7000108&amp;client=kvasir&amp;channel=test_ads_num_4-4-seller-ratings-plus-ones-domain-link-above-description&amp;hl=no&amp;adsafe=medium&amp;type=0&amp;oe=UTF-8&amp;ie=UTF-8&amp;jsei=4&amp;format=p4%257Cn4&amp;ad=n4p4&amp;nocache=8941423554056747&amp;num=0&amp;output=uds_ads_only&amp;v=3&amp;adlh=on&amp;adext=as1%252Cl1%252Csr1&amp;bsl=10&amp;u_his=3&amp;u_tz=60&amp;dt=1423554056748&amp;u_w=1920&amp;u_h=1200&amp;biw=1032&amp;bih=797&amp;psw=1032&amp;psh=1491&amp;frm=0&amp;uio=uv3cs1po1sr1va1sl1lo1-lHst16sd13sv13da1-lhst16sd13sv13da1&amp;rurl=http%253A%252F%252Fkvasir.no%252Falle%253Fq%253Dfisk&amp;referer=http%253A%252F%252Fkvasir.no%252F%23master-1</PropertyCondition>
+                      <PropertyCondition Name="PageUrl">//www.google.com/afs/ads?q=fisk&amp;lo=true&amp;adpage=1&amp;adrep=2&amp;po=true&amp;r=m&amp;fexp=2631602%2C21404%2C7000108&amp;client=kvasir&amp;channel=test_ads_num_4-4-seller-ratings-plus-ones-domain-link-above-description&amp;hl=no&amp;adsafe=medium&amp;type=0&amp;oe=UTF-8&amp;ie=UTF-8&amp;jsei=4&amp;format=p4%7Cn4&amp;ad=n4p4&amp;nocache=8941423554056747&amp;num=0&amp;output=uds_ads_only&amp;v=3&amp;adlh=on&amp;adext=as1%2Cl1%2Csr1&amp;bsl=10&amp;u_his=3&amp;u_tz=60&amp;dt=1423554056748&amp;u_w=1920&amp;u_h=1200&amp;biw=1032&amp;bih=797&amp;psw=1032&amp;psh=1491&amp;frm=0&amp;uio=uv3cs1po1sr1va1sl1lo1-lHst16sd13sv13da1-lhst16sd13sv13da1&amp;rurl=http%3A%2F%2Fkvasir.no%2Falle%3Fq%3Dfisk&amp;referer=http%3A%2F%2Fkvasir.no%2F#master-1</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">name='{"name":"master-1","slave-1-1":{"c</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Document" Id="UIHttpwwwgooglecomafsaDocument" FriendlyName="http://www.google.com/afs/ads?q=fisk&amp;lo=true&amp;adpag..." SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>fisk - Kvasir</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                          <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                          <PropertyCondition Name="FrameDocument">True</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="AbsolutePath">/afs/ads</PropertyCondition>
+                          <PropertyCondition Name="PageUrl">http://www.google.com/afs/ads?q=fisk&amp;lo=true&amp;adpage=1&amp;adrep=2&amp;po=true&amp;r=m&amp;fexp=2631602%2C21404%2C7000108&amp;client=kvasir&amp;channel=test_ads_num_4-4-seller-ratings-plus-ones-domain-link-above-description&amp;hl=no&amp;adsafe=medium&amp;type=0&amp;oe=UTF-8&amp;ie=UTF-8&amp;jsei=4&amp;format=p4%7Cn4&amp;ad=n4p4&amp;nocache=8941423554056747&amp;num=0&amp;output=uds_ads_only&amp;v=3&amp;adlh=on&amp;adext=as1%2Cl1%2Csr1&amp;bsl=10&amp;u_his=3&amp;u_tz=60&amp;dt=1423554056748&amp;u_w=1920&amp;u_h=1200&amp;biw=1032&amp;bih=797&amp;psw=1032&amp;psh=1491&amp;frm=0&amp;uio=uv3cs1po1sr1va1sl1lo1-lHst16sd13sv13da1-lhst16sd13sv13da1&amp;rurl=http%3A%2F%2Fkvasir.no%2Falle%3Fq%3Dfisk&amp;referer=http%3A%2F%2Fkvasir.no%2F#master-1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants>
+                        <UIObject ControlType="Pane" Id="UIE19Pane" FriendlyName="e19" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>fisk - Kvasir</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                              <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                              <PropertyCondition Name="Id">e19</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="InnerText">Fiskeoppskrifter - Sunne og gode oppskri</PropertyCondition>
+                              <PropertyCondition Name="Title" />
+                              <PropertyCondition Name="Class">a_ b_</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">class="a_ b_" id="e19"</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants>
+                            <UIObject ControlType="Pane" Id="UIFiskeoppskrifterSunnPane" FriendlyName="Fiskeoppskrifter - Sunne og gode oppskri" SpecialControlType="None">
+                              <TechnologyName>Web</TechnologyName>
+                              <WindowTitles>
+                                <WindowTitle>fisk - Kvasir</WindowTitle>
+                              </WindowTitles>
+                              <AndCondition Id="SearchCondition">
+                                <AndCondition Id="Primary">
+                                  <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                                  <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                                  <PropertyCondition Name="Id" />
+                                  <PropertyCondition Name="Name" />
+                                </AndCondition>
+                                <FilterCondition Id="Secondary">
+                                  <PropertyCondition Name="InnerText">Fiskeoppskrifter - Sunne og gode oppskri</PropertyCondition>
+                                  <PropertyCondition Name="Title" />
+                                  <PropertyCondition Name="Class">adStd threeLine</PropertyCondition>
+                                  <PropertyCondition Name="ControlDefinition">class="adStd threeLine"</PropertyCondition>
+                                  <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                                </FilterCondition>
+                              </AndCondition>
+                              <SupportLevel>0</SupportLevel>
+                              <Descendants />
+                            </UIObject>
+                          </Descendants>
+                        </UIObject>
+                      </Descendants>
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIFiskKvasirInternetExWindow1" FriendlyName="fisk - Kvasir - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="1509654">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>fisk - Kvasir</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">fisk - Kvasir</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants />
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>
